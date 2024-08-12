@@ -1,12 +1,14 @@
 created: 20240810170429979
-modified: 20240812023402638
+modified: 20240812030744452
 tags: 
 title: $:/plugins/scorbeil/new-from/snippets/menu
 type: text/vnd.tiddlywiki
 
 \whitespace trim
+<$set name="builtins" filter="[all[shadows+tiddlers]tag[$:/plugins/scorbeil/new-from/BuiltIn]!is[draft]sort[]]">
+<$set name=templates filter="[all[shadows+tiddlers]tag[$:/plugins/scorbeil/new-from/Template]!is[draft]sort[]]">
 <div class="tc-chooser">
-<$list filter="[all[shadows+tiddlers]tag[$:/plugins/scorbeil/new-from/BuiltIn]!is[draft]sort[]]">
+<$list filter=<<builtins>>>
 <div class="tc-menu-list-item">
 <$button class="tc-btn-invisible">
 {{!!text}}
@@ -14,10 +16,10 @@ type: text/vnd.tiddlywiki
 </$button>
 </div>
 </$list>
-<$list filter="[all[shadows+tiddlers]tag[$:/plugins/scorbeil/new-from/Template]!is[draft]count[]compare:number:gt[0]then[1]]=[all[shadows+tiddlers]tag[$:/plugins/scorbeil/new-from/Template]!is[draft]count[]compare:number:gt[0]then[1]]:reduce[add<accumulator>]:filter[compare:number:eq[2]]">
+<$list filter="[<builtins>count[]compare:number:gt[0]then[1]]=[<templates>count[]compare:number:gt[0]then[1]]:reduce[add<accumulator>]:filter[compare:number:eq[2]]">
 <hr>
 </$list>
-<$list filter="[all[shadows+tiddlers]tag[$:/plugins/scorbeil/new-from/Template]!is[draft]sort[]]">
+<$list filter=<<templates>>>
 <div class="tc-menu-list-item">
 <$button class="tc-btn-invisible">
 {{!!text}}
@@ -26,3 +28,5 @@ type: text/vnd.tiddlywiki
 </div>
 </$list>
 </div>
+</$set>
+</$set>
