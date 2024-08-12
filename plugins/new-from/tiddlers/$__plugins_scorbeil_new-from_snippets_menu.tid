@@ -1,11 +1,11 @@
 created: 20240810170429979
-modified: 20240812030744452
+modified: 20240812033641762
 tags: 
 title: $:/plugins/scorbeil/new-from/snippets/menu
 type: text/vnd.tiddlywiki
 
 \whitespace trim
-<$set name="builtins" filter="[all[shadows+tiddlers]tag[$:/plugins/scorbeil/new-from/BuiltIn]!is[draft]sort[]]">
+<$set name="builtins" filter="[all[shadows+tiddlers]tag[$:/plugins/scorbeil/new-from/BuiltIn]field:enabled[yes]!is[draft]sort[]]">
 <$set name=templates filter="[all[shadows+tiddlers]tag[$:/plugins/scorbeil/new-from/Template]!is[draft]sort[]]">
 <div class="tc-chooser">
 <$list filter=<<builtins>>>
@@ -16,7 +16,7 @@ type: text/vnd.tiddlywiki
 </$button>
 </div>
 </$list>
-<$list filter="[<builtins>count[]compare:number:gt[0]then[1]]=[<templates>count[]compare:number:gt[0]then[1]]:reduce[add<accumulator>]:filter[compare:number:eq[2]]">
+<$list filter="[<builtins>!is[blank]count[]compare:number:gt[0]then[1]]=[<templates>!is[blank]count[]compare:number:gt[0]then[1]]:reduce[add<accumulator>]:filter[compare:number:eq[2]]">
 <hr>
 </$list>
 <$list filter=<<templates>>>

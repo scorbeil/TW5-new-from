@@ -1,7 +1,9 @@
 caption: Journal
 created: 20240810202632173
-modified: 20240811024704194
+enabled: yes
+modified: 20240812033749075
 tags: $:/plugins/scorbeil/new-from/BuiltIn
 title: $:/plugins/scorbeil/new-from/menu/Journal
+type: text/vnd.tiddlywiki
 
 {{$:/core/ui/Actions/new-journal}}

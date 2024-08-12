@@ -1,0 +1,29 @@
+created: 20240812024410911
+modified: 20240812032116075
+tags: 
+title: $:/plugins/scorbeil/new-from/config
+type: text/vnd.tiddlywiki
+
+!!! Manage Built-Ins
+These templates are built in, but can be individually enabled/disabled and re-captioned
+
+<table>
+<tr>
+<th>✓</th>
+<th>Caption</th>
+<th>Tiddler</th>
+</tr>
+<$list filter="[all[shadows+tiddlers]tag[$:/plugins/scorbeil/new-from/BuiltIn]!is[draft]sort[]]">
+<tr>
+<td>
+<$checkbox tiddler={{!!title}} field="enabled" checked="yes" unchecked="no"/>
+</td>
+<td>
+<$edit-text tiddler={{!!title}} field="caption"/>
+</td>
+<td>
+{{!!title}}
+</td>
+</tr>
+</$list>
+</table>

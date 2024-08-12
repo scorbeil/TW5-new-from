@@ -1,6 +1,7 @@
 caption: Image
 created: 20240811172307272
-modified: 20240811172318951
+enabled: yes
+modified: 20240812033843685
 tags: $:/plugins/scorbeil/new-from/BuiltIn
 title: $:/plugins/scorbeil/new-from/menu/Image
 type: text/vnd.tiddlywiki

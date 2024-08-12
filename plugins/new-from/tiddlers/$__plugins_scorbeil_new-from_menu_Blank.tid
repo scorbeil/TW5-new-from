@@ -1,7 +1,9 @@
 caption: Blank
 created: 20240810202449507
-modified: 20240811024647124
+enabled: yes
+modified: 20240812033818602
 tags: $:/plugins/scorbeil/new-from/BuiltIn
 title: $:/plugins/scorbeil/new-from/menu/Blank
+type: text/vnd.tiddlywiki
 
 {{$:/core/ui/Actions/new-tiddler}}
