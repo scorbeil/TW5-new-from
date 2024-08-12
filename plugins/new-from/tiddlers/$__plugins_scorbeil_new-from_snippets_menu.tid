@@ -1,0 +1,28 @@
+created: 20240810170429979
+modified: 20240812023402638
+tags: 
+title: $:/plugins/scorbeil/new-from/snippets/menu
+type: text/vnd.tiddlywiki
+
+\whitespace trim
+<div class="tc-chooser">
+<$list filter="[all[shadows+tiddlers]tag[$:/plugins/scorbeil/new-from/BuiltIn]!is[draft]sort[]]">
+<div class="tc-menu-list-item">
+<$button class="tc-btn-invisible">
+{{!!text}}
+''<$view field="caption" format="text"/>''
+</$button>
+</div>
+</$list>
+<$list filter="[all[shadows+tiddlers]tag[$:/plugins/scorbeil/new-from/Template]!is[draft]count[]compare:number:gt[0]then[1]]=[all[shadows+tiddlers]tag[$:/plugins/scorbeil/new-from/Template]!is[draft]count[]compare:number:gt[0]then[1]]:reduce[add<accumulator>]:filter[compare:number:eq[2]]">
+<hr>
+</$list>
+<$list filter="[all[shadows+tiddlers]tag[$:/plugins/scorbeil/new-from/Template]!is[draft]sort[]]">
+<div class="tc-menu-list-item">
+<$button class="tc-btn-invisible">
+{{!!text}}
+''<$view field="caption" format="text"/>''
+</$button>
+</div>
+</$list>
+</div>

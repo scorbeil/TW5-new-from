@@ -1,0 +1,10 @@
+created: 20240810232254020
+modified: 20240811023841006
+tags: 
+title: $:/plugins/scorbeil/new-from/BaseTemplate
+
+<$wikify name="title" text={{{ [<template-title>!is[blank]]~[<event-navigateTo>get[template-title]!is[blank]]~[<navigateTo>get[template-title]!is[blank]]~[{!!template-title}!is[blank]]~[<qualify "New Tiddler">] }}}>
+<$set name="template" value={{{ [<template>!is[blank]]~[<event-navigateTo>get[template]!is[blank]]~[<navigateTo>get[template]!is[blank]]~[{!!template}!is[blank]] }}}>
+<$action-sendmessage $message="tm-new-tiddler" $param=<<template>> title=<<title>> />
+</$set>
+</$wikify>

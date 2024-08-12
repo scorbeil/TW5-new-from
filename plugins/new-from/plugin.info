@@ -1,9 +1,11 @@
 {
 	"title": "$:/plugins/scorbeil/new-from",
-	"description": "A TiddlyWiki plugin which implements a 'new' button that creates new tiddlers from a menu of built-in and user-defined templates",
+	"name": "New From",
+	"description": "New from template button",
 	"author": "Scott Corbeil",
 	"version": "0.0.1",
 	"core-version": ">=5.3.5",
 	"source": "https://github.com/scorbeil/TW5-new-from",
-	"plugin-type": "plugin"
+	"plugin-type": "plugin",
+	"list": "readme license"
 }

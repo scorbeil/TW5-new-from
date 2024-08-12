@@ -1,0 +1,7 @@
+caption: Journal
+created: 20240810202632173
+modified: 20240811024704194
+tags: $:/plugins/scorbeil/new-from/BuiltIn
+title: $:/plugins/scorbeil/new-from/menu/Journal
+
+{{$:/core/ui/Actions/new-journal}}
